@@ -10,7 +10,7 @@ cpf = '80245473092'
 cpf_zeroanove = cpf[:9] #fatiamento de string
 
 
-#passo 2: fazer a contagem
+# Passo 2: fazer a contagem
 
 contador_regressivo_1 = 10
 resultado = 0
@@ -20,7 +20,7 @@ for digito_1 in cpf_zeroanove: #aparecerá cada número do cpf de 0 a nove
     contador_regressivo_1 -= 1
     digito_1 = (resultado * 10) % 11
 
-#passo 3: validar o primeir digito
+# Passo 3: validar o primeiro digito
 digito_1 = digito_1 if digito_1 <= 9 else 0 
 
 print(digito_1)
